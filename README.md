@@ -42,3 +42,23 @@ Regarding the specifics of the task, Motion Match is used as follows:
 someone/something commands the pilot to perform a gesture;
 the pilot performs the movement according to the given command.
 Motor skills projects use a virtual hand that performs gestures according to a previously defined protocol. The pilot repeats gestures behind the virtual hand with some natural delay. This data collection approach allows the pilot to concentrate more on reproducing gestures.
+
+## Problems
+1.	Different distribution of values in different datasets (even for the same pilot).
+2.	Gesture fulfilling delay
+3.	Mistakes in gestures
+4.	Pilot's mistakes and confusions 
+5.	Unbalanced classes
+6.	Feature importance 
+
+
+## Solutions
+1.	Creating a new model to predict a new pilot’s gestures
+2.	Shifting the protocol to reduce pilot's delay
+3.	We decided to leave outliers because deleting them didn’t improve final result
+4.	Working only with ‘good’ datasets
+5.	Using smote
+6.	Feature selection based on correlation with target
+
+We created three branches with an individual notebook of each team member.
+
